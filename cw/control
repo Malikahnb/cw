@@ -1,0 +1,28 @@
+1. Get employees whose phone number ends with 90.
+2. Who has a Gmail account.
+3. Who works in 5 or 6 departments.
+4. Whose salary more than 5000.
+5. Whose salary more than 2000 and less than 1500.
+
+----------------------------------------------------------
+
+1. select * from employees where phone_number like '%90'
+2. select * from employees where email like '%@gmail%'
+3. select * from employees where department_id = 5 or department_id = 6
+4. select * from employees where salary > 5000
+5. select * from employees where salary > 2000 and salary < 1500
+
+
+users:
+
+name varchar(50) NOT NULL
+
+age int NULL
+
+salary float NOT NULL
+
+Using this table structure, create a model. Then, create two pages: a list of users and a form to add users.
+
+You need to create this functionality using both: FBV and CBV. In total 4 pages. Don't forget to use modelforms.
+
+Note. Those who'll push tasks to GitHub will get more points.
